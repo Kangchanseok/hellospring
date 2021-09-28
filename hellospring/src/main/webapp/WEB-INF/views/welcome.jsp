@@ -4,10 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Hello Spring</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<h1>Hello Spring</h1>
-	<p>${ message }</p>
+	<h1>Welcome</h1>
+	<h2>${message }</h2>
+	
 </body>
 </html>

@@ -4,8 +4,11 @@
   <artifactId>hellospring</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  <!-- properties -->
-  <!-- build settings -->
+  <!-- Properties -->
+  <properties>
+  	<org.springframework-version>5.3.10</org.springframework-version>
+  </properties>
+  <!--  Build Settings -->
   <build>
     <plugins>
       <plugin>
@@ -21,31 +24,32 @@
       </plugin>
     </plugins>
   </build>
+  
+  <!-- Dependencies -->
+  <dependencies>
+  	<!-- Spring Context -->
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-context</artifactId>
+	    <version>${org.springframework-version}</version>
+	</dependency>
+	
+	<!-- Spring Web -->
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-web</artifactId>
+	    <version>${org.springframework-version}</version>
+	</dependency>
+		
+	<!-- Spring WebMVC -->
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	    <version>${org.springframework-version}</version>
+	</dependency>
+		
+  </dependencies>
 </project>
-
-<!-- spring context   -->
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-context</artifactId>
-    <version>${org.springframework-version}</version>
-</dependency>
-
-<!-- Spring web -->
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-web</artifactId>
-    <version>${org.springframework-version}</version>
-</dependency>
-
-<!-- Spring web mvc -->
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-webmvc</artifactId>
-    <version>${org.springframework-version}</version>
-</dependency>
-
-
-
